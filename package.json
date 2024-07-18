@@ -2,11 +2,12 @@
   "name": "vite-react-starterpack",
   "version": "1.0.0",
   "description": "Basic Vite React Starterpack for React Web Applications",
-  "main": "index.js",
+  "main": "index.jsx",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "./node_modules/.bin/eslint src --ext .js,.jsx --fix"
   },
   "author": "",
   "license": "ISC",
@@ -21,5 +22,13 @@
     "sass": "^1.77.8",
     "vite": "^5.3.4",
     "vite-plugin-eslint": "^1.8.1"
+  },
+  "dependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "axios": "^1.7.2",
+    "lodash.debounce": "^4.0.8",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router": "^6.25.1"
   }
 }
